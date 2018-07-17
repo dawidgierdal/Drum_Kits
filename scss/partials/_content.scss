@@ -1,0 +1,59 @@
+.main-content{
+  background-image: url('../images/trapcity.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+.board{
+  margin: 10vh auto;
+  width: 80vw;
+  max-width: 60vh;
+  height: 80vw;
+  max-height: 60vh;
+  font-size: 1.5rem;
+  background-image: url('../images/trapcity.jpg');
+  border-radius: 8px;
+}
+
+.row{
+  display: flex;
+}
+
+.box {
+  margin: 20px;
+  color:rgba(123,223,123,0.8);
+  font-family: 'Russo One', sans-serif;
+  font-weight: bold;
+  flex: 1 0 auto;
+  position: relative;
+  border-radius: 8px;
+}
+
+.box:after {
+  content: "";
+  float:left;
+  display: block;
+  padding-top: 100%;
+}
+.box .inner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.key{
+  //border: 2px solid white;
+  background-color: rgba(123, 231, 132, 0.5);
+  transition: all 0.4s;
+}
+.playing{
+  transform: scale(1.1);
+  border-color: gold;
+  box-shadow: 0 0 10px black;
+}

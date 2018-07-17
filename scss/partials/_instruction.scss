@@ -1,0 +1,46 @@
+.main-instruction-banner {
+  background-color: black;
+  height: 5vh;
+}
+
+.main-instruction-filter{
+  background-color: black;
+}
+
+.main-instruction {
+  background-image: url('../images/urban.png');
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: screen;
+  display: flex;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.main-instruction-box {
+  height: 90vh;
+  max-height: 90vh;
+  padding: 6vh;
+  line-height: 10vh;
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Russo One', sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+  h1{
+    font-size: 5rem;
+    padding-bottom: 10vh;
+  }
+}
+
+//.main-instruction-box li {
+//  &:hover {
+//    &:after {
+//      content: '';
+//      display: block;
+//      background-color: cyan;
+//      width: 123vh;
+//      height: 1vh;
+//      position: absolute;
+//    }
+//  }
+//}
+

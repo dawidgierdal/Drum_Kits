@@ -1,0 +1,14 @@
+.main-words-container{
+  display: flex;
+  height: 20vh;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+.main-words-box{
+  font-family: 'Russo One', sans-serif;
+  max-height: 15vh;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
