@@ -8,7 +8,7 @@ module.exports = function(env) {
     console.log(isDev, 'isDev');
 
     const config = {
-        entry: "./js/app.js",
+        entry: "./js/main.jsx",
         output: {
             filename: "out.js",
             path: path.resolve(__dirname, "build")

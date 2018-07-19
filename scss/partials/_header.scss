@@ -1,8 +1,24 @@
 .main-header{
-  margin: 0 auto;
-  height: 100vh;
-  background-image: url("../images/trap.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-
+   height: 100vh;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.main-header-title{
+   font-family: 'Russo One', sans-serif;
+   color: rgba(255,255,255,0.8);
+   font-size: 10rem;
+   position: absolute;
+   span {
+      color: rgba(200, 70, 252, 0.5);
+      &:after {
+         content: '';
+         display: block;
+         background-color: rgba(123, 231, 232, 0.5);
+         width: 47vh;
+         height: 1vh;
+         border-radius: 8px;
+      }
+   }
 }

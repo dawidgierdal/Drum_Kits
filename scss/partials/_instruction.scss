@@ -11,6 +11,7 @@
   background-image: url('../images/urban.png');
   background-color: rgba(0, 0, 0, 0.2);
   background-blend-mode: screen;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   opacity: 0.8;
@@ -21,13 +22,13 @@
   max-height: 90vh;
   padding: 6vh;
   line-height: 10vh;
-  font-size: 3rem;
-  text-align: center;
+  font-size: 2.6rem;
+  text-align: left;
   font-family: 'Russo One', sans-serif;
   color: rgba(255, 255, 255, 0.9);
   h1{
     font-size: 5rem;
-    padding-bottom: 10vh;
+    padding-bottom: 8vh;
   }
 }
 

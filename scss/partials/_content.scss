@@ -4,9 +4,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 80vh;
+  display: flex;
+  justify-content: center;
+
 }
 .board{
-  margin: 10vh auto;
+  margin: 10vh;
   width: 80vw;
   max-width: 60vh;
   height: 80vw;
@@ -14,46 +17,38 @@
   font-size: 1.5rem;
   background-image: url('../images/trapcity.jpg');
   border-radius: 8px;
-}
-
-.row{
   display: flex;
+  flex-wrap: wrap;
+  span{
+    position: absolute;
+    top: 38%;
+    left: 41%;
+  }
 }
 
 .box {
-  margin: 20px;
-  color:rgba(123,223,123,0.8);
+  width: 17%;
+  height: 17%;
+  margin: 3%;
+  color: cyan;
   font-family: 'Russo One', sans-serif;
+  position: relative;
   font-weight: bold;
   flex: 1 0 auto;
-  position: relative;
   border-radius: 8px;
-}
+  text-align: center;
 
-.box:after {
-  content: "";
-  float:left;
-  display: block;
-  padding-top: 100%;
-}
-.box .inner {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .key{
-  //border: 2px solid white;
-  background-color: rgba(123, 231, 132, 0.5);
-  transition: all 0.4s;
+  background-color: rgba(58, 234, 232, 0.5);;
+  transition: all 0.5s;
 }
+
 .playing{
-  transform: scale(1.1);
-  border-color: gold;
   box-shadow: 0 0 10px black;
+  border: rgba(123, 231, 232, 0.5);
+  background-color: rgba(243, 103, 103, 0.5);
+  color: #faa3a3;
+  transform: rotate(90deg);
 }
