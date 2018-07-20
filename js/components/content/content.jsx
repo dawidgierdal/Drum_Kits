@@ -42,6 +42,7 @@ class Content extends React.Component {
             } else {
                 playing += "";
             }
+
             const elem =  <Button dataKey={buttons[i].dataKey}
                                   playing= {playing}
                                   name={buttons[i].name}
