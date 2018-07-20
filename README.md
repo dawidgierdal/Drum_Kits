@@ -8,5 +8,5 @@
 - Webpack
 
 ### Screenshoot
-![Image](https://github.com/dawidgierdal/Drum_Kits/Screenshots/Board_Drum_Kits.PNG)
+![Image](https://github.com/dawidgierdal/Drum_Kits/Screenshots/blob/master/Board_Drum_Kits.PNG)
 #
