@@ -14,7 +14,7 @@ class Content extends React.Component {
 
         }
 
-        window.addEventListener('keydown', e => this.handleKeyDown(e) );
+        // window.addEventListener('keydown', e => this.handleKeyDown(e) );
     }
 
     handleKeyDown = (e) => {
@@ -42,7 +42,6 @@ class Content extends React.Component {
             } else {
                 playing += "";
             }
-
             const elem =  <Button dataKey={buttons[i].dataKey}
                                   playing= {playing}
                                   name={buttons[i].name}
@@ -65,7 +64,7 @@ class Content extends React.Component {
         return <section className="content">
             <div className="container">
                 <div className="col-12 main-content">
-                    <div className="board" tabIndex="0">
+                    <div className="board" onKeyDown={this.handleKeyDown} tabIndex="0">
                         {rows}
                     </div>
                 </div>

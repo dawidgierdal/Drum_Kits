@@ -10,10 +10,10 @@ class Instruction extends React.Component{
                     <div className="col-8 main-instruction-box">
                         <h1>Instruction</h1>
                         <ul>
-                            <li>1. To start press the "A" button</li>
+                            <li>1. To start click the board and press the "A" button</li>
                             <li>2. After pressing, you turn on the first sound</li>
                             <li>3. The duration of the sound will appear on the button</li>
-                            <li>4. The song lyrics appear above the console</li>
+                            <li>4. The song lyrics appear above the board</li>
                             <li>5. Try to play the song as best as you can! :)</li>
                         </ul>
                     </div>
