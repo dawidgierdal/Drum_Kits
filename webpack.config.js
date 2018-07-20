@@ -11,7 +11,7 @@ module.exports = function(env) {
         entry: "./js/main.jsx",
         output: {
             filename: "out.js",
-            path: path.resolve(__dirname, "build")
+            path: path.resolve(__dirname, "docs")
         },
         mode: isDev ? 'development' : 'production',
         module: {

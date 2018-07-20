@@ -1,0 +1,204 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: black; }
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto; }
+  .container .col-1 {
+    width: 8.33333%; }
+  .container .col-2 {
+    width: 16.66667%; }
+  .container .col-3 {
+    width: 25%; }
+  .container .col-4 {
+    width: 33.33333%; }
+  .container .col-5 {
+    width: 41.66667%; }
+  .container .col-6 {
+    width: 50%; }
+  .container .col-7 {
+    width: 58.33333%; }
+  .container .col-8 {
+    width: 66.66667%; }
+  .container .col-9 {
+    width: 75%; }
+  .container .col-10 {
+    width: 83.33333%; }
+  .container .col-11 {
+    width: 91.66667%; }
+  .container .col-12 {
+    width: 100%; }
+
+.main-header {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main-header-title {
+  font-family: 'Russo One', sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 10rem;
+  position: absolute; }
+  .main-header-title span {
+    color: rgba(200, 70, 252, 0.5); }
+    .main-header-title span:after {
+      content: '';
+      display: block;
+      background-color: rgba(123, 231, 232, 0.5);
+      width: 47vh;
+      height: 1vh;
+      border-radius: 8px; }
+
+.main-content {
+  background-image: url(images/trapcity.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  justify-content: center; }
+
+.board {
+  margin: 10vh;
+  width: 80vw;
+  max-width: 60vh;
+  height: 80vw;
+  max-height: 60vh;
+  font-size: 1.5rem;
+  background-image: url(images/trapcity.jpg);
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap; }
+  .board span {
+    position: absolute;
+    top: 38%;
+    left: 41%; }
+
+.box {
+  width: 17%;
+  height: 17%;
+  margin: 3%;
+  color: cyan;
+  font-family: 'Russo One', sans-serif;
+  position: relative;
+  font-weight: bold;
+  flex: 1 0 auto;
+  border-radius: 8px;
+  text-align: center; }
+
+.key {
+  background-color: rgba(58, 234, 232, 0.5);
+  transition: all 0.5s; }
+
+.playing {
+  box-shadow: 0 0 10px black;
+  border: rgba(123, 231, 232, 0.5);
+  background-color: rgba(243, 103, 103, 0.5);
+  color: #faa3a3;
+  transform: rotate(90deg); }
+
+.main-footer {
+  margin: 0 auto;
+  background-color: black;
+  height: 5vh; }
+
+.main-words-container {
+  display: flex;
+  height: 20vh;
+  align-items: center;
+  justify-content: center;
+  background-color: black; }
+
+.main-words-box {
+  font-family: 'Russo One', sans-serif;
+  max-height: 15vh;
+  color: white;
+  font-size: 3rem;
+  text-align: center; }
+
+.main-instruction-banner {
+  background-color: black;
+  height: 5vh; }
+
+.main-instruction-filter {
+  background-color: black; }
+
+.main-instruction {
+  background-image: url(images/urban.png);
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: screen;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  opacity: 0.8; }
+
+.main-instruction-box {
+  height: 90vh;
+  max-height: 90vh;
+  padding: 6vh;
+  line-height: 10vh;
+  font-size: 2.6rem;
+  text-align: left;
+  font-family: 'Russo One', sans-serif;
+  color: rgba(255, 255, 255, 0.9); }
+  .main-instruction-box h1 {
+    font-size: 5rem;
+    padding-bottom: 8vh; }
+
+canvas {
+  height: 100vh;
+  width: 100%;
+  background-image: url(images/road.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
