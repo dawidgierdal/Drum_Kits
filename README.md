@@ -1,2 +1,8 @@
 # Drum_Kits
-Drum Kits
+
+### Tools
+- React
+- SASS
+- JAVASCRIPT
+- Canvas
+- Webpack
