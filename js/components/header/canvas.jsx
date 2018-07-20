@@ -32,9 +32,9 @@ class Canvas extends React.Component {
             // console.log(event)
         });
 
-        window.addEventListener('resize', function () {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
+        window.addEventListener('resize',  () => {
+            this.refs.canvas.width = window.innerWidth;
+            this.refs.canvas.height = window.innerHeight;
             init();
         });
         function Circle(x, y, dx, dy, radius) {

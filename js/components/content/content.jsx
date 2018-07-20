@@ -13,9 +13,11 @@ class Content extends React.Component {
             timer: ''
 
         }
+
+        window.addEventListener('keydown', e => this.handleKeyDown(e) );
     }
 
-    handleKeyDown = (e, tab) => {
+    handleKeyDown = (e) => {
 
         const active = buttons.filter( elem => {
             return elem.dataKey == e.keyCode
@@ -62,7 +64,7 @@ class Content extends React.Component {
         return <section className="content">
             <div className="container">
                 <div className="col-12 main-content">
-                    <div className="board" onKeyDown={this.handleKeyDown} tabIndex="0">
+                    <div className="board" tabIndex="0">
                         {rows}
                     </div>
                 </div>
